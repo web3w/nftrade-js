@@ -1,0 +1,26 @@
+{
+  "name": "nftrade-js",
+  "version": "1.0.2",
+  "description": "Javascript SDK for the NFT Market ",
+  "main": "lib/index.js",
+  "type": "lib/index.d.ts",
+  "author": "Element Project Developers",
+  "scripts": {
+    "release": "tsc && npm publish && git tag $npm_package_version && git push --tag",
+    "start": "tsc -w -p tsconfig.json",
+    "link": "sudo npm link nftrade-js"
+  },
+  "dependencies": {
+    "web3-abi-coder": "^1.1.5",
+    "web3-accounts": "1.2.10",
+    "web3-wallets": "^2.1.9"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "ts-node": "~10.7.0",
+    "typescript": "~4.6.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
